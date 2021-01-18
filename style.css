@@ -1,0 +1,179 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Navigation */
+
+#navigation{
+    position: fixed;
+    z-index: 40;
+    width: 100%;
+    background-color: rgb(250, 211, 207);
+    text-align: center;
+    height: 10rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 55% 70%, 50% 90%, 45% 70%, 0% 70%);
+    transition: all 0.4s ease-in-out;
+}
+
+#navigation a{
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 1rem 5rem;
+    line-height: 6.5rem;
+    font-family: 'Kaushan Script';
+    margin: auto;
+    color: #373737;
+}
+#navigation a:active{
+    font-size: 4rem;
+}
+.icon{
+    display: none;
+}
+
+/* Header */
+header{
+    height: 100vh;
+    width: 100%;
+    background: url(photos/barber.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 30rem;
+    font-family: 'Kaushan Script';
+    font-size: 10rem;
+    color: white;
+}
+header h2{
+    text-align: center;
+    margin: 0;
+    color: #f7f7f7;
+    position: relative;
+    top: 32rem;
+    font-family: 'Abril Fatface';
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+}
+header #arrow{
+    color: black;
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    line-height: 8rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 0 0 #FFF;
+    animation: pulse 1.3s infinite;
+}
+@keyframes pulse {
+    to
+    {
+        box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.01);
+    }
+}
+/* First section About, 3pics */
+.section-about{
+    background-color: #f7f7f7;
+    padding: 10rem;
+
+}
+.centerH{
+    text-align: center;
+    margin-bottom: 8rem;
+}
+.titreAbout{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, #373737, #c0b283);
+    -webkit-background-clip: text ;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2rem;
+    padding-top: 5rem;
+}
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+.sousTitreAbout{
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+.paragraphe{
+    font-size: 1.9rem;
+}
+.paragraphe:not(:last-child){
+    margin-bottom: 3rem;
+}
+
+/* Float */
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row [class^="col-"]{
+    float: left;
+}
+.row [class^="col-"]:not(:last-child){
+    margin-right: 6rem;
+}
+.row .col-1-of-2 {
+    width: 50rem;
+}
+.composition{
+    position: relative;
+}
+.composition_photo{
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 2rem;
+}
+.composition_photo--1{
+    left: 0;
+    top: -2rem;
+}
+.composition_photo--2{
+    right: 0;
+    top: 2rem;
+}
+.composition_photo--3{
+    left: 20%;
+    top: 10rem;
+}
+.composition_photo:hover{
+    outline: 1.5rem solid rgb(250, 211, 207);
+    transform: scale(1.5) translateY(-0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    z-index: 30;
+}
+.composition:hover .composition_photo:not(:hover){
+    transform: scale(0.8);
+}
+
+/* Section Nos tarifs */
