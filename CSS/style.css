@@ -18,6 +18,9 @@ body{
     height: 10rem;
     clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 15.3% 70%, 18% 90%,21.6% 70%, 55% 70%, 50% 90%, 45% 70%, 78.5% 70%, 82% 90%,85.5% 70%, 0% 70%);
     transition: all 0.4s ease-in-out;
+
+    /* GreenSock */
+    opacity: 0;
     
 }
 
@@ -53,6 +56,10 @@ h1{
     font-family: 'Kaushan Script';
     font-size: 10rem;
     color: white;
+    /*greenSock*/
+
+    opacity: 0;
+    
 }
 header h2{
     text-align: center;
@@ -63,6 +70,9 @@ header h2{
     font-family: 'Abril Fatface';
     font-size: 5rem;
     letter-spacing: 0.2rem;
+
+    /* GrennSock */
+    opacity: 0;
 }
 header #arrow{
     color: black;
@@ -80,6 +90,9 @@ header #arrow{
     background-color: white;
     box-shadow: 0 0 0 0 #FFF;
     animation: pulse 1.3s infinite;
+
+    /* GreenSock */
+    opacity: 0;
 }
 @keyframes pulse {
     to
@@ -108,6 +121,8 @@ header #arrow{
     color: transparent;
     letter-spacing: 0.2rem;
     padding-top: 5rem;
+    /* grennSock */
+    opacity: 0;
 }
 .row{
     max-width: 114rem;
@@ -118,6 +133,8 @@ header #arrow{
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 1.9rem;
+    /* greenSock */
+    opacity: 0;
 }
 .paragraphe{
     font-size: 1.9rem;

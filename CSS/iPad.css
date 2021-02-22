@@ -1,0 +1,27 @@
+
+
+#navigation{
+    height: 15rem;
+}
+.icon{
+    top:1.5rem;
+}
+header{
+    height: 65.5vh;
+}
+
+header h1{
+    line-height: 5rem;
+    top:25rem;
+    
+}
+header h2{
+    top: 35rem;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+header #arrow{
+    top: 60rem;
+    
+}

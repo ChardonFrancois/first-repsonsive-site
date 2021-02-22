@@ -36,6 +36,18 @@
         transition: all .4s ease-in-out;
         border-bottom: 2px solid #373737;
     }
+    #navigation.responsive{
+        height: 50rem;
+    }
+    #navigation.responsive a:not(:last-child){
+        display: block;
+        text-align: center;
+        margin:0;
+        position: relative;
+        top: 1.5rem;
+        font-size: 2.4rem;
+    
+    }
 
 }
 
@@ -49,6 +61,8 @@
     h1{
         top: 27rem;
         font-size: 7.5rem;
+        
+        
     }
 
     header h2{
@@ -314,7 +328,8 @@
         width: 30rem;
     }
     .carousel .changeHidden .element{
-        font-size: 2.2rem;
+        font-size: 1.5rem;
+        text-align: center;
         
     }
 }

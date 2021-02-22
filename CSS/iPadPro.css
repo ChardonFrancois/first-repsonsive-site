@@ -1,0 +1,14 @@
+#navigation{
+    height: 13rem;
+}
+#navigation a {
+    
+}
+
+header{
+    height: 50.5vh;
+}
+
+header #arrow{
+    top: 60rem;
+}

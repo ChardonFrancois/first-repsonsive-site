@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/baseMedia.css">
 
+    <link rel="stylesheet" media="only screen and (width: 768px) and (height: 1024px)" href="CSS/iPad.css">
+
+    <link rel="stylesheet" media="only screen and (width: 1024px) and (height: 1366px)" href="CSS/iPadPro.css">
+
+    <!-- favicon -->
+
+    <link rel="icon" href="photos/Capture d’écran 2021-02-10 à 18.43.56.ico" type="image/x-icon">
+
     <!-- Police de caractères -->
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
@@ -35,11 +43,11 @@
 
         <nav id="navigation">
 
-            <a href="#acceuil" class="liensNav">Acceuil</a>
-            <a href="#valeurs" class="liensNav">Nos valeurs</a>
-            <a href="#tarifs" class="liensNav">Nos tarifs</a>
-            <a href="#contact" class="liensNav">Contact</a>
-            <a class="icon" id="icon"> <i class="lni lni-menu"></i> </a>
+            <a href="#acceuil" class="liensNav" onclick="toggleNav()">Acceuil</a>
+            <a href="#valeurs" class="liensNav" onclick="toggleNav()">Nos valeurs</a>
+            <a href="#tarifs" class="liensNav" onclick="toggleNav()">Nos tarifs</a>
+            <a href="#contact" class="liensNav" onclick="toggleNav()">Contact</a>
+            <a class="icon" id="icon" onclick="toggleNav()" > <i class="lni lni-menu"></i> </a>
 
         </nav>
 
@@ -230,13 +238,15 @@
 
 
 
-
-
-            
+        
 
 
     
+<!-- Liens script -->
 
- <script src="JS/app.js"></script>   
+
+ <script src="JS/app.js"></script>
+<script src="JS/greenSock.js"></script> 
+ 
 </body>
 </html>
